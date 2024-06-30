@@ -1,0 +1,51 @@
+# This file will automatically update with entries for new content after a build and reload
+
+Items: {
+	ASD: {
+		DisplayName: ASD
+		Tooltip: 白帝圣剑！
+	}
+
+	Minigun: {
+		DisplayName: Minigun
+		Tooltip: 其实这是一把弓。
+	}
+
+	Apex: {
+		DisplayName: Apex
+		Tooltip: 斧镐一体超级工具！
+	}
+
+	Accessory: {
+		DisplayName: Accessory
+		Tooltip: 终极饰品！500每秒生命恢复！全伤害增加50%！近战攻速增加30%！增加300最大生命值！
+	}
+
+	ACR: {
+		DisplayName: 雷明顿ACR
+		Tooltip: 由雷明顿公司生产的突击步枪
+	}
+}
+
+NPCs: {
+	Price: {
+		DisplayName: Price
+
+		TownNPCMood: {
+			Content: 我很满足。
+			NoHome: 我讨厌没有家。
+			FarFromHome: 我离家太远了。
+			LoveSpace: 我非常喜欢有这么大的空间。
+			DislikeCrowded: 我不喜欢这么拥挤。
+			HateCrowded: 我讨厌这么拥挤。
+			LoveBiome: 我非常喜欢{BiomeName}。
+			LikeBiome: 我喜欢{BiomeName}。
+			DislikeBiome: 我不喜欢{BiomeName}。
+			HateBiome: 我讨厌{BiomeName}。
+			LikeNPC: 我喜欢{NPCName}。
+			DislikeNPC: 我不喜欢{NPCName}。
+			LikeNPC_Princess: I like {NPCName}.
+			Princess_LovesNPC: I like {NPCName}.
+		}
+	}
+}
