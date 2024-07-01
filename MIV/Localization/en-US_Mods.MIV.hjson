@@ -23,7 +23,12 @@ Items: {
 
 	ACR: {
 		DisplayName: 雷明顿ACR
-		Tooltip: 由雷明顿公司生产的突击步枪
+		Tooltip: 由M博士主导生产的火控装置，自称模仿自以前天基武器，不过有小道消息称真实研发原因是博士输掉了打赌
+	}
+
+	Debris: {
+		DisplayName: Debris
+		Tooltip: 一种来自异世界的未知碎块
 	}
 }
 
