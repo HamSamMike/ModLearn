@@ -3,7 +3,7 @@
 _This is one of the most interesting things I find during the C# learning process_
 
 ---
-# V0.0.0.2024701.1
+# V0.0.0.2024702.1
 * 新增一个物品
 * 修改一个物品的文本
 
