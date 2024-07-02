@@ -4,14 +4,12 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MIV.Items
+namespace MIV.Items.Block
 {
     public class Debris : ModItem
     {//这是一个材料。
         public override void SetDefaults()
         {
-            Item.width = 40;//贴图宽度
-            Item.height = 40;//贴图高度
             Item.value = Item.sellPrice(60, 0, 0, 0);//价格
             Item.rare = -12;//稀有度
             

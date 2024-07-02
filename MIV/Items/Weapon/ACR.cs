@@ -13,7 +13,7 @@ using Microsoft.Xna.Framework;
 using Steamworks;
 
 
-namespace MIV.Items
+namespace MIV.Items.Weapon
 {//改成散射系列武器
     public class ACR:ModItem
     {

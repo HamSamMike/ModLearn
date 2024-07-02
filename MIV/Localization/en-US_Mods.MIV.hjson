@@ -16,9 +16,9 @@ Items: {
 		Tooltip: 斧镐一体超级工具！
 	}
 
-	Accessory: {
-		DisplayName: Accessory
-		Tooltip: 终极饰品！500每秒生命恢复！全伤害增加50%！近战攻速增加30%！增加300最大生命值！
+	StarlightNecklace: {
+		DisplayName: Starlight Necklace
+		Tooltip: 由群星组成的项链
 	}
 
 	ACR: {

@@ -5,9 +5,9 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MIV.Items
+namespace MIV.Items.Accessory
 {
-    public class Accessory : ModItem
+    public class StarlightNecklace : ModItem
     {//这是一个饰品
         // The Display Name and Tooltip of this item can be edited in the Localization/en-US_Mods.MIV.hjson file.
         public override void SetStaticDefaults()

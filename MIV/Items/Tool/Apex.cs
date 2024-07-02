@@ -4,7 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MIV.Items
+namespace MIV.Items.Tool
 {
     public class Apex : ModItem//斧镐一体
     {//这是一把斧镐

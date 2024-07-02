@@ -4,7 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MIV.Items
+namespace MIV.Items.Weapon
 {
     public class Minigun : ModItem
     {//这是一把弓，还在研究怎么实现一把枪

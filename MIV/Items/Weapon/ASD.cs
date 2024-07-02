@@ -5,7 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MIV.Items
+namespace MIV.Items.Weapon
 {
 	public class ASD : ModItem
 	{//这是一把剑
@@ -36,19 +36,19 @@ namespace MIV.Items
 
 		public override void AddRecipes()
 		{
-			Recipe recipe = CreateRecipe();
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.Register();
-		}
+            Recipe recipe = CreateRecipe();//定义新的合成配方
+            recipe.AddIngredient<Block.Debris>(10);//配方
+            recipe.AddTile(TileID.WorkBenches);//工作站
+            recipe.Register();//注册合成表
+        }
         public override void MeleeEffects(Player player, Rectangle hitbox)
-        {
+        {//粒子效果
 			Dust eff = Dust.NewDustDirect(hitbox.TopLeft(),hitbox.Width,hitbox.Height,DustID.MoonBoulder);
 			eff.velocity *= 0;
 			eff.noGravity= true;
 		}
         public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-        {
+        {//弹幕
             Projectile p = Projectile.NewProjectileDirect(source, position, -velocity, ProjectileID.FallingStar, damage, knockback, player.whoAmI);
             return base.Shoot(player, source, position, velocity, type, damage, knockback);
         }
