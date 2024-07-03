@@ -14,8 +14,8 @@ using Steamworks;
 
 
 namespace MIV.Items.Weapon
-{//改成散射系列武器
-    public class ACR:ModItem
+{//武装圆盘
+    public class ArmedDisc:ModItem
     {
 
         public override void SetDefaults()

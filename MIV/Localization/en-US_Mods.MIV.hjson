@@ -1,34 +1,44 @@
 # This file will automatically update with entries for new content after a build and reload
 
 Items: {
-	ASD: {
-		DisplayName: ASD
-		Tooltip: 白帝圣剑！
-	}
-
-	Minigun: {
-		DisplayName: Minigun
-		Tooltip: 其实这是一把弓。
-	}
-
-	Apex: {
-		DisplayName: Apex
-		Tooltip: 斧镐一体超级工具！
-	}
-
 	StarlightNecklace: {
-		DisplayName: Starlight Necklace
+		DisplayName: 星光项链
 		Tooltip: 由群星组成的项链
 	}
 
-	ACR: {
-		DisplayName: 雷明顿ACR
-		Tooltip: 由M博士主导生产的火控装置，自称模仿自以前天基武器，不过有小道消息称真实研发原因是博士输掉了打赌
+	CoreFragments: {
+		DisplayName: 灿阳碎块
+		Tooltip: 一种具有神秘力量的碎片，似乎源自某种力量的核心
+	}
+
+	ArmedDisc: {
+		DisplayName: 武装圆盘
+		Tooltip: 由大量的枪组成的圆盘，意外地好使
+	}
+
+	DemonAxe: {
+		DisplayName: 恶灵斧
+		Tooltip: ""
+	}
+
+	DemonMetalBow: {
+		DisplayName: 恶灵合金弓
+		Tooltip: ""
+	}
+
+	DemonMetalSword: {
+		DisplayName: 恶灵合金剑
+		Tooltip: ""
+	}
+
+	DemonMetal: {
+		DisplayName: 恶灵合金
+		Tooltip: 由两种具有邪恶力量的金属炼制而成
 	}
 
 	Debris: {
-		DisplayName: Debris
-		Tooltip: 一种来自异世界的未知碎块
+		DisplayName: 异能碎块
+		Tooltip: 一种由未知物质组成的碎块，似乎并不属于这个世界
 	}
 }
 

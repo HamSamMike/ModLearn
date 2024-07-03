@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using MIV.Items.Block;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -6,8 +7,8 @@ using Terraria.ModLoader;
 
 namespace MIV.Items.Tool
 {
-    public class Apex : ModItem//斧镐一体
-    {//这是一把斧镐
+    public class DemonAxe : ModItem//斧镐一体
+    {//恶灵斧
     public override void SetDefaults()
         {
             Item.damage = 15;
@@ -18,12 +19,12 @@ namespace MIV.Items.Tool
             Item.useAnimation = 6;
             Item.useStyle = ItemUseStyleID.Swing;
             Item.knockBack = 6;
-            Item.value = Item.sellPrice(60, 0, 0, 0);
-            Item.rare = -12;
+            Item.value = Item.sellPrice(0, 6, 0, 0);
+            Item.rare = ItemRarityID.Blue;//稀有度;
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
-            Item.pick = 1000; // 1000%的镐力
-            Item.axe = 200; // 这个比较特殊，200 * 5 = 1000%的斧力！
+            //Item.pick = 1000; // 1000%的镐力
+            Item.axe = 20; // 这个比较特殊，20 * 5 = 100的斧力！
             //Item.hammer = 100; // 100%的锤力！
             Item.tileBoost = 10;//额外的使用距离
             //Item.staff 用于设置专属功能
@@ -33,8 +34,8 @@ namespace MIV.Items.Tool
         public override void AddRecipes()
         {
             Recipe recipe = CreateRecipe();
-            recipe.AddIngredient(ItemID.DirtBlock, 1);
-            recipe.AddTile(TileID.WorkBenches);
+            recipe.AddIngredient<DemonMetal>(15);//15个恶魔合金
+            recipe.AddTile(TileID.Anvils);//铁砧合成
             recipe.Register();
         }
 

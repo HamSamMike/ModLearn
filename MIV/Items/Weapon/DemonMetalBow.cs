@@ -6,8 +6,8 @@ using Terraria.ModLoader;
 
 namespace MIV.Items.Weapon
 {
-    public class Minigun : ModItem
-    {//这是一把弓，还在研究怎么实现一把枪
+    public class DemonMetalBow : ModItem
+    {//恶灵合金弓
         public override void SetDefaults()
         {
             Item.useAmmo = AmmoID.None;//弹药选择
@@ -19,8 +19,8 @@ namespace MIV.Items.Weapon
             Item.useAnimation = 20;//贴图使用时间
             Item.useStyle = ItemUseStyleID.Shoot;//使用动画
             Item.knockBack = 6;//击退
-            Item.value = Item.sellPrice(60, 0, 0, 0);//价格
-            Item.rare = -12;//稀有度
+            Item.value = Item.sellPrice(0, 6, 0, 0);//价格
+            Item.rare = ItemRarityID.Blue;//稀有度
             Item.UseSound = SoundID.Item1;//使用音效
             Item.autoReuse = true;//能否自动挥舞
             Item.shoot = ProjectileID.MoonlordArrow; //useAmmo会覆盖这个语句，但是没有这个语句是射不出去的

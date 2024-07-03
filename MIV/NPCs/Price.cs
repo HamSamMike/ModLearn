@@ -269,9 +269,9 @@ namespace MIV.NPCs
             //Make a new NPCShop, and items to it, and call AbstractNPCShop.Register
             //http://docs.tmodloader.net/docs/stable/class_mod_n_p_c.html#afb01454e473cae470741a9a0954b4b09
             var npcShop = new NPCShop(Type, ShopName)
-            .Add(new Item(ModContent.ItemType<Items.Weapon.ASD>()) { shopCustomPrice = Item.buyPrice(copper: 15) })//卖模组物品
-            .Add(new Item(ModContent.ItemType<Items.Tool.Apex>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
-            .Add(new Item(ModContent.ItemType<Items.Weapon.Minigun>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
+            .Add(new Item(ModContent.ItemType<Items.Weapon.DemonMetalSword>()) { shopCustomPrice = Item.buyPrice(copper: 15) })//卖模组物品
+            .Add(new Item(ModContent.ItemType<Items.Tool.DemonAxe>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
+            .Add(new Item(ModContent.ItemType<Items.Weapon.DemonMetalBow>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
             .Add(new Item(ModContent.ItemType<Items.Accessory.StarlightNecklace>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
             .Add(new Item(ItemID.Wood) { shopCustomPrice = Item.buyPrice(copper: 1) })//卖原版物品
             ;//更详细的信息请参考示例模组的ExampleNPCShop.cs文件

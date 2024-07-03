@@ -7,12 +7,13 @@ using Terraria.ModLoader;
 namespace MIV.Items.Block
 {
     public class CoreFragments : ModItem
-    {//这是一个材料。
+    {//核心碎块
         public override void SetDefaults()
         {
-            Item.value = Item.sellPrice(60, 0, 0, 0);//价格
-            Item.rare = -12;//稀有度
-            
+            Item.value = Item.sellPrice(0, 1, 0, 0);//价格
+            Item.rare = ItemRarityID.Blue;//稀有度
+            Item.maxStack = Item.CommonMaxStack;
+
         }
         public override void AddRecipes()
         {//合成表
