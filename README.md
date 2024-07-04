@@ -3,6 +3,12 @@
 _This is one of the most interesting things I find during the C# learning process_
 
 ---
+# V0.0.0.2024703.1
+* 新增一个物品:恶灵合金锭
+* 修改大量文本
+
+**大量贴图不符合对应物品，预计在下一次提交时更新。**
+
 # V0.0.0.2024702.1
 * 新增一个物品
 * 修改一个物品的文本
