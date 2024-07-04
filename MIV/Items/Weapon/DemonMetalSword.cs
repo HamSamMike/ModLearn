@@ -18,7 +18,7 @@ namespace MIV.Items.Weapon
         }
         public override void SetDefaults()
 		{
-			Item.damage = 50000000;
+			Item.damage = 50;
 			Item.DamageType = DamageClass.Melee;
 			Item.width = 80;
 			Item.height = 80;
@@ -27,31 +27,32 @@ namespace MIV.Items.Weapon
 			Item.useStyle = ItemUseStyleID.Swing;
 			Item.knockBack = 6;
             Item.value = Item.sellPrice(0, 6, 0, 0);
-			Item.rare = ItemRarityID.Blue;//稀有度
+			Item.rare = ItemRarityID.Orange;//稀有度
             Item.UseSound = SoundID.Item1;
 			Item.autoReuse = true;
-            Item.shoot = ProjectileID.StarWrath; // 弹幕类型
+            Item.shoot = ProjectileID.DemonScythe; // 弹幕类型
             Item.shootSpeed = 6f; // 物品发射弹幕的速度，单位：像素/帧，一秒 = 60帧
-            Item.crit = 396; // 396%暴击率，游戏内显示会是396 + 4 = 400%暴击率
+            Item.crit = 0; // 4%暴击率，游戏内显示会是0 + 4 = 4%暴击率
         }
 
 		public override void AddRecipes()
 		{
             Recipe recipe = CreateRecipe();//定义新的合成配方
             recipe.AddIngredient<DemonMetal>(20);//配方
+           recipe.AddIngredient(ItemID.DemonScythe, 1);//配方
             recipe.AddTile(TileID.Anvils);//工作站
             recipe.Register();//注册合成表
         }
         public override void MeleeEffects(Player player, Rectangle hitbox)
         {//粒子效果
-			Dust eff = Dust.NewDustDirect(hitbox.TopLeft(),hitbox.Width,hitbox.Height,DustID.MoonBoulder);
-			eff.velocity *= 0;
-			eff.noGravity= true;
-		}
-        public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
-        {//弹幕
-            Projectile p = Projectile.NewProjectileDirect(source, position, -velocity, ProjectileID.FallingStar, damage, knockback, player.whoAmI);
-            return base.Shoot(player, source, position, velocity, type, damage, knockback);
+            Dust eff = Dust.NewDustDirect(hitbox.TopLeft(), hitbox.Width, hitbox.Height, DustID.Demonite);
+            eff.velocity *= 0;
+            eff.noGravity = true;
         }
+        //public override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
+        //{//弹幕
+        //    Projectile p = Projectile.NewProjectileDirect(source, position,-velocity, ProjectileID.DemonScythe, damage, knockback, player.whoAmI);
+        //    return base.Shoot(player, source, position, velocity, type, damage, knockback);
+        //}
     }
 }

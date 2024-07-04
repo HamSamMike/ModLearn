@@ -270,7 +270,7 @@ namespace MIV.NPCs
             //http://docs.tmodloader.net/docs/stable/class_mod_n_p_c.html#afb01454e473cae470741a9a0954b4b09
             var npcShop = new NPCShop(Type, ShopName)
             .Add(new Item(ModContent.ItemType<Items.Weapon.DemonMetalSword>()) { shopCustomPrice = Item.buyPrice(copper: 15) })//卖模组物品
-            .Add(new Item(ModContent.ItemType<Items.Tool.DemonAxe>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
+            .Add(new Item(ModContent.ItemType<Items.Tool.DemonHammer>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
             .Add(new Item(ModContent.ItemType<Items.Weapon.DemonMetalBow>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
             .Add(new Item(ModContent.ItemType<Items.Accessory.StarlightNecklace>()) { shopCustomPrice = Item.buyPrice(copper: 15) })
             .Add(new Item(ItemID.Wood) { shopCustomPrice = Item.buyPrice(copper: 1) })//卖原版物品

@@ -8,7 +8,6 @@ using Terraria;
 using Terraria.ID;
 using Microsoft.Build.Evaluation;
 using Terraria.DataStructures;
-
 using Microsoft.Xna.Framework;
 using Steamworks;
 
@@ -30,7 +29,7 @@ namespace MIV.Items.Weapon
             Item.noMelee = true; // 不进行近战攻击
             Item.knockBack = 2; // 击退力度
             Item.value = Item.buyPrice(gold: 10); // 物品价值
-            Item.rare = ItemRarityID.Yellow; // 物品稀有度
+            Item.rare = ItemRarityID.Blue; // 物品稀有度
             Item.UseSound = SoundID.Item11; // 使用时的声音
             Item.autoReuse = true; // 自动重用
             Item.shoot = ProjectileID.Bullet; // 发射物类型

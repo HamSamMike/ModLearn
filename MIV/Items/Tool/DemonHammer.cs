@@ -7,8 +7,8 @@ using Terraria.ModLoader;
 
 namespace MIV.Items.Tool
 {
-    public class DemonAxe : ModItem//斧镐一体
-    {//恶灵斧
+    public class DemonHammer : ModItem
+    {//恶灵锤
     public override void SetDefaults()
         {
             Item.damage = 15;
@@ -24,9 +24,9 @@ namespace MIV.Items.Tool
             Item.UseSound = SoundID.Item1;
             Item.autoReuse = true;
             //Item.pick = 1000; // 1000%的镐力
-            Item.axe = 20; // 这个比较特殊，20 * 5 = 100的斧力！
-            //Item.hammer = 100; // 100%的锤力！
-            Item.tileBoost = 10;//额外的使用距离
+            //Item.axe = 20; // 这个比较特殊，20 * 5 = 100的斧力！
+            Item.hammer = 75; // 75的锤力！
+            Item.tileBoost = 3;//+3距离
             //Item.staff 用于设置专属功能
             
 

@@ -16,11 +16,6 @@ Items: {
 		Tooltip: 由大量的枪组成的圆盘，意外地好使
 	}
 
-	DemonAxe: {
-		DisplayName: 恶灵斧
-		Tooltip: ""
-	}
-
 	DemonMetalBow: {
 		DisplayName: 恶灵合金弓
 		Tooltip: ""
@@ -39,6 +34,21 @@ Items: {
 	Debris: {
 		DisplayName: 异能碎块
 		Tooltip: 一种由未知物质组成的碎块，似乎并不属于这个世界
+	}
+
+	DemonPickaxe: {
+		DisplayName: 恶灵合金斧锤
+		Tooltip: ""
+	}
+
+	DemonAxePickaxe: {
+		DisplayName: 恶灵斧镐
+		Tooltip: ""
+	}
+
+	DemonHammer: {
+		DisplayName: 恶灵锤
+		Tooltip: ""
 	}
 }
 
