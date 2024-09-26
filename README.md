@@ -3,6 +3,10 @@
 _This is one of the most interesting things I find during the C# learning process_
 
 ---
+# V0.0.0.2024704.1
+* 新增恶灵合金主题装甲，暂无编码和贴图
+* 修改大量贴图，使其符合物品属性与文本描述
+
 # V0.0.0.2024703.1
 * 新增一个物品:恶灵合金锭
 * 修改大量文本
