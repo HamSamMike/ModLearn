@@ -6,10 +6,10 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MIV.Items.Weapon
+namespace MIV.Items.Weapon.Melee
 {
-	public class DemonMetalSword : ModItem
-	{//恶灵合金剑
+    public class DemonMetalSword : ModItem
+    {//恶灵合金剑
         // The Display Name and Tooltip of this item can be edited in the Localization/en-US_Mods.MIV.hjson file.
         public override void SetStaticDefaults()
         {
@@ -17,29 +17,29 @@ namespace MIV.Items.Weapon
 
         }
         public override void SetDefaults()
-		{
-			Item.damage = 50;
-			Item.DamageType = DamageClass.Melee;
-			Item.width = 80;
-			Item.height = 80;
-			Item.useTime = 20;
-			Item.useAnimation = 20;
-			Item.useStyle = ItemUseStyleID.Swing;
-			Item.knockBack = 6;
+        {
+            Item.damage = 50;
+            Item.DamageType = DamageClass.Melee;
+            Item.width = 80;
+            Item.height = 80;
+            Item.useTime = 20;
+            Item.useAnimation = 20;
+            Item.useStyle = ItemUseStyleID.Swing;
+            Item.knockBack = 6;
             Item.value = Item.sellPrice(0, 6, 0, 0);
-			Item.rare = ItemRarityID.Orange;//稀有度
+            Item.rare = ItemRarityID.Orange;//稀有度
             Item.UseSound = SoundID.Item1;
-			Item.autoReuse = true;
+            Item.autoReuse = true;
             Item.shoot = ProjectileID.DemonScythe; // 弹幕类型
             Item.shootSpeed = 6f; // 物品发射弹幕的速度，单位：像素/帧，一秒 = 60帧
             Item.crit = 0; // 4%暴击率，游戏内显示会是0 + 4 = 4%暴击率
         }
 
-		public override void AddRecipes()
-		{
+        public override void AddRecipes()
+        {
             Recipe recipe = CreateRecipe();//定义新的合成配方
             recipe.AddIngredient<DemonMetal>(20);//配方
-           recipe.AddIngredient(ItemID.DemonScythe, 1);//配方
+            recipe.AddIngredient(ItemID.DemonScythe, 1);//配方
             recipe.AddTile(TileID.Anvils);//工作站
             recipe.Register();//注册合成表
         }

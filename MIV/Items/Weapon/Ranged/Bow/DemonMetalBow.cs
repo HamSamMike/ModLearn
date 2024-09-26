@@ -4,7 +4,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace MIV.Items.Weapon
+namespace MIV.Items.Weapon.Ranged.Bow
 {
     public class DemonMetalBow : ModItem
     {//恶灵合金弓
@@ -25,7 +25,7 @@ namespace MIV.Items.Weapon
             Item.autoReuse = true;//能否自动挥舞
             Item.shoot = ProjectileID.MoonlordArrow; //useAmmo会覆盖这个语句，但是没有这个语句是射不出去的
             Item.shootSpeed = 6f; // 物品发射弹幕的速度，单位：像素/帧，一秒 = 60帧
-            
+
         }
         public override void AddRecipes()
         {//合成表

@@ -22,7 +22,7 @@ Items: {
 	}
 
 	DemonMetalSword: {
-		DisplayName: 恶灵合金剑DemonMetalSword
+		DisplayName: 恶灵合金剑
 		Tooltip: ""
 	}
 
@@ -52,18 +52,18 @@ Items: {
 	}
 
 	MORS: {
-		DisplayName: M O R S
-		Tooltip: ""
+		// DisplayName: M O R S
+		// Tooltip: ""
 	}
 
 	AK103: {
-		DisplayName: A K103
-		Tooltip: ""
+		// DisplayName: A K103
+		// Tooltip: ""
 	}
 
 	HK416: {
-		DisplayName: H K416
-		Tooltip: ""
+		// DisplayName: H K416
+		// Tooltip: ""
 	}
 }
 
@@ -90,4 +90,4 @@ NPCs: {
 	}
 }
 
-Projectiles.MORSAmmo.DisplayName: M O R S Ammo
+// Projectiles.MORSAmmo.DisplayName: M O R S Ammo
