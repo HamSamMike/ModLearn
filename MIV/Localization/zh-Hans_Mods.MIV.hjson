@@ -65,6 +65,11 @@ Items: {
 		// DisplayName: H K416
 		// Tooltip: ""
 	}
+
+	TransitionPotion: {
+		// DisplayName: Transition Potion
+		// Tooltip: ""
+	}
 }
 
 NPCs: {
@@ -91,3 +96,10 @@ NPCs: {
 }
 
 // Projectiles.MORSAmmo.DisplayName: M O R S Ammo
+
+Buffs: {
+	New: {
+		DisplayName: 跃迁药剂
+		Description: 焕然一新！
+	}
+}
